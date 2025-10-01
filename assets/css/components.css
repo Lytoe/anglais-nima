@@ -1,0 +1,100 @@
+/* components.css — buttons, cards, nav pills, hero bits */
+
+/* Buttons */
+.btn {
+  --btn-bg: #111827;
+  --btn-fg: #ffffff;
+  --btn-bd: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--btn-bd);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-weight: 700;
+  transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease), background var(--speed) var(--ease);
+  text-decoration: none;
+  box-shadow: 0 2px 0 rgba(0,0,0,.03);
+}
+.btn:hover { transform: translateY(-1px); text-decoration: none; }
+.btn:active { transform: translateY(0); }
+
+.btn--primary {
+  --btn-bg: var(--blue);
+  --btn-bd: #0f62fe;
+}
+.btn--primary:hover { --btn-bg: var(--blue-700); }
+
+.btn--ghost {
+  --btn-bg: #ffffff;
+  --btn-fg: var(--text);
+  --btn-bd: var(--border);
+  box-shadow: none;
+}
+.btn--ghost:hover { --btn-bd: #cbd5e1; background: #f8fafc; }
+
+.btn--whatsapp {
+  --btn-bg: var(--green);
+}
+.btn--whatsapp:hover { --btn-bg: var(--green-700); }
+
+/* Cards (levels) */
+.card {
+  display: grid;
+  gap: var(--s-3);
+  padding: var(--s-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.card p { color: #374151; }
+
+/* Brand / header links */
+.nav a {
+  position: relative;
+  padding: 6px 2px;
+  border-radius: 6px;
+}
+.nav a:hover { color: var(--blue); }
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px; height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--speed) var(--ease);
+}
+.nav a:hover::after { transform: scaleX(1); }
+
+/* Hero copy tweaks */
+.hero .lead { max-width: 62ch; }
+.hero .btn { min-width: 180px; }
+
+/* Pricing list bullets */
+.price-card ul { display: grid; gap: 8px; padding-left: 0; list-style: none; }
+.price-card ul li {
+  position: relative; padding-left: 22px; color: #334155;
+}
+.price-card ul li::before {
+  content: ""; position: absolute; left: 0; top: 8px;
+  width: 10px; height: 10px; border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, var(--green), var(--blue));
+  filter: saturate(1.2);
+}
+
+/* Testimonial caption */
+.testimonial figcaption { color: #334155; font-size: var(--fs-1); }
+
+/* Notes */
+.note { color: #334155; margin-top: var(--s-5); }
+/* Optional quote styling */
+blockquote.quote {
+  margin: 0; padding: 12px 16px; border-left: 4px solid var(--green);
+  background: #F8FAFC; border-radius: 8px;
+}

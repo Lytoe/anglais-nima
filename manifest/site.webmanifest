@@ -1,0 +1,14 @@
+{
+  "name": "Nima — Cours d’anglais à Paris",
+  "short_name": "Nima Anglais",
+  "description": "Formateur d’anglais affilié Cambridge. Collège & Lycée. Paris 12/13/20, Nation, Gare de Lyon.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F62FE",
+  "icons": [
+    { "src": "/assets/favicon/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/favicon/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
