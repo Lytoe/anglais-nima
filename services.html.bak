@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -6,8 +6,8 @@
   <title>Offres & Tarifs — Cours d’anglais à Paris | Nima</title>
   <meta name="description" content="Formules collégiens & lycéens : séance 75 min (40 €) ou programme 5/7 semaines (250 €). Paris 12/13/20, Nation, Gare de Lyon. À domicile et en ligne.">
   <link rel="canonical" href="https://anglais.nima.fr/services.html">
-  <link rel="icon" href="href="assets/favicon/favicon.ico">
-  <link rel="manifest" href="href="manifest/site.webmanifest">
+  <link rel="icon" href="/assets/favicon/favicon.ico">
+  <link rel="manifest" href="/manifest/site.webmanifest">
 
   <meta property="og:title" content="Offres & Tarifs — Cours d’anglais à Paris">
   <meta property="og:description" content="Séance 75 min (40 €) ou pack 5/7 semaines (250 €). Paris 12/13/20, Nation, Gare de Lyon.">
@@ -18,9 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="href="assets/css/base.css">
-  <link rel="stylesheet" href="href="assets/css/layout.css">
-  <link rel="stylesheet" href="href="assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -60,11 +60,11 @@
 <body>
   <header class="site-header">
     <div class="container header__inner">
-      <a class="brand" href="index.html">Nima<span class="brand__accent">Anglais</span></a>
+      <a class="brand" href="/">Nima<span class="brand__accent">Anglais</span></a>
       <nav class="nav">
-        <a href="services.html" aria-current="page">Offres & Tarifs</a>
-        <a href="testimonials.html">Avis</a>
-        <a href="about.html">À propos</a>
+        <a href="/services.html" aria-current="page">Offres & Tarifs</a>
+        <a href="/testimonials.html">Avis</a>
+        <a href="/about.html">À propos</a>
         <a class="btn btn--whatsapp"
            data-wa-number="+33745301632"
            data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
@@ -121,17 +121,17 @@
           <article class="card">
             <h3>Supports personnalisés</h3>
             <p>Fiches et exercices adaptés au niveau (CM1–Terminale) avec exemples concrets.</p>
-            <p><a href="href="assets/docs/cm2-lecture-lexique-extrait.pdf" target="_blank" rel="noopener">Voir un extrait (PDF)</a></p>
+            <p><a href="/assets/docs/cm2-lecture-lexique-extrait.pdf" target="_blank" rel="noopener">Voir un extrait (PDF)</a></p>
           </article>
           <article class="card">
             <h3>Plan & suivi</h3>
             <p>Objectifs clairs semaine par semaine, suivi WhatsApp, mini-tests de progression.</p>
-            <p><a href="href="assets/docs/2nde-vocab-progression-tracker.pdf" target="_blank" rel="noopener">Exemple de suivi (PDF)</a></p>
+            <p><a href="/assets/docs/2nde-vocab-progression-tracker.pdf" target="_blank" rel="noopener">Exemple de suivi (PDF)</a></p>
           </article>
           <article class="card">
             <h3>Préparation d’épreuves</h3>
             <p>Plans de réponses pour Brevet/Bac, entraînement à l’oral, corrections détaillées.</p>
-            <p><a href="href="assets/docs/3e-brevet-oral-plan-exemple.pdf" target="_blank" rel="noopener">Plan d’oral (PDF)</a></p>
+            <p><a href="/assets/docs/3e-brevet-oral-plan-exemple.pdf" target="_blank" rel="noopener">Plan d’oral (PDF)</a></p>
           </article>
         </div>
       </div>
@@ -187,7 +187,6 @@
     </div>
   </footer>
 
-  <script src="src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
-

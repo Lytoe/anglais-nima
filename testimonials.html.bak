@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 
 <head>
@@ -8,8 +8,8 @@
     <meta name="description"
         content="Avis vérifiables (captures WhatsApp floutées) et témoignages courts. Collège & Lycée, Paris 12/13/20, Nation, Gare de Lyon.">
     <link rel="canonical" href="https://anglais.nima.fr/testimonials.html">
-    <link rel="icon" href="href="assets/favicon/favicon.ico">
-    <link rel="manifest" href="href="manifest/site.webmanifest">
+    <link rel="icon" href="/assets/favicon/favicon.ico">
+    <link rel="manifest" href="/manifest/site.webmanifest">
 
     <meta property="og:title" content="Avis — Cours d’anglais">
     <meta property="og:description" content="Retours de parents et d’élèves — progrès concrets, confiance à l’oral.">
@@ -20,19 +20,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="href="assets/css/base.css">
-    <link rel="stylesheet" href="href="assets/css/layout.css">
-    <link rel="stylesheet" href="href="assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
 </head>
 
 <body>
     <header class="site-header">
         <div class="container header__inner">
-            <a class="brand" href="index.html">Nima<span class="brand__accent">Anglais</span></a>
+            <a class="brand" href="/">Nima<span class="brand__accent">Anglais</span></a>
             <nav class="nav">
-                <a href="services.html">Offres & Tarifs</a>
-                <a href="testimonials.html" aria-current="page">Avis</a>
-                <a href="about.html">À propos</a>
+                <a href="/services.html">Offres & Tarifs</a>
+                <a href="/testimonials.html" aria-current="page">Avis</a>
+                <a href="/about.html">À propos</a>
                 <a class="btn btn--whatsapp" data-wa-number="+33745301632"
                     data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
             </nav>
@@ -48,38 +48,38 @@
 
                 <div class="testimonials" style="margin-top: var(--s-6);">
                     <figure class="testimonial">
-                        <img src="src="assets/img/testimonials/wa-1-blur.jpg"
+                        <img src="/assets/img/testimonials/wa-1-blur.jpg"
                             alt="Avis WhatsApp flouté — Parent 5e, Paris 13e">
                         <figcaption>“On est très contents de votre méthode. Ça leur donne une autre voie pour
                             progresser… Merci pour votre travail pédagogique. Nous sommes sûrs qu’ils vont atteindre le
                             niveau souhaité. ” — Parent, Paris 12e</figcaption>
                     </figure>
                     <figure class="testimonial">
-                        <img src="src="assets/img/testimonials/wa-2-blur.jpg" alt="Avis WhatsApp flouté — Élève 3e, Nation">
+                        <img src="/assets/img/testimonials/wa-2-blur.jpg" alt="Avis WhatsApp flouté — Élève 3e, Nation">
                         <figcaption>“Brevet : plus à l’aise à l’oral et en compréhension.” — Élève 3e, Nation
                         </figcaption>
                     </figure>
                     <figure class="testimonial">
-                        <img src="src="assets/img/testimonials/wa-3-blur.jpg"
+                        <img src="/assets/img/testimonials/wa-3-blur.jpg"
                             alt="Avis WhatsApp flouté — Élève Terminale, Paris 12e">
                         <figcaption>“Grand oral OK, meilleure structure des réponses.” — Terminale, Paris 12e
                         </figcaption>
                     </figure>
 
                     <figure class="testimonial">
-                        <img src="src="assets/img/testimonials/wa-4-blur.jpg"
+                        <img src="/assets/img/testimonials/wa-4-blur.jpg"
                             alt="Avis WhatsApp flouté — Parent 4e, Paris 20e">
                         <figcaption>“Parle plus volontiers à la maison, vocabulaire enrichi.” — Parent 4e, Paris 20e
                         </figcaption>
                     </figure>
                     <figure class="testimonial">
-                        <img src="src="assets/img/testimonials/wa-5-blur.jpg"
+                        <img src="/assets/img/testimonials/wa-5-blur.jpg"
                             alt="Avis WhatsApp flouté — 2nde, Gare de Lyon">
                         <figcaption>“Compréhension écrite mieux gérée, notes stabilisées.” — 2nde, Gare de Lyon
                         </figcaption>
                     </figure>
                     <figure class="testimonial">
-                        <img src="src="assets/img/testimonials/wa-6-blur.jpg" alt="Avis WhatsApp flouté — 1re, Paris 12e">
+                        <img src="/assets/img/testimonials/wa-6-blur.jpg" alt="Avis WhatsApp flouté — 1re, Paris 12e">
                         <figcaption>“Méthode claire, stress diminué avant contrôles.” — 1re, Paris 12e</figcaption>
                     </figure>
                 </div>
@@ -149,7 +149,7 @@
         </div>
     </footer>
 
-    <script src="src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

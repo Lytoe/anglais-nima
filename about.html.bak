@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 
 <head>
@@ -8,8 +8,8 @@
     <meta name="description"
         content="Formateur d’anglais affilié Cambridge. Master en linguistique (en cours). Ancien enseignant en établissement public (2–3 ans). Paris 12/13/20.">
     <link rel="canonical" href="https://anglais.nima.fr/about.html">
-    <link rel="icon" href="href="assets/favicon/favicon.ico">
-    <link rel="manifest" href="href="manifest/site.webmanifest">
+    <link rel="icon" href="/assets/favicon/favicon.ico">
+    <link rel="manifest" href="/manifest/site.webmanifest">
 
     <meta property="og:title" content="À propos — Nima">
     <meta property="og:description"
@@ -21,19 +21,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="href="assets/css/base.css">
-    <link rel="stylesheet" href="href="assets/css/layout.css">
-    <link rel="stylesheet" href="href="assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
 </head>
 
 <body>
     <header class="site-header">
         <div class="container header__inner">
-            <a class="brand" href="index.html">Nima<span class="brand__accent">Anglais</span></a>
+            <a class="brand" href="/">Nima<span class="brand__accent">Anglais</span></a>
             <nav class="nav">
-                <a href="services.html">Offres & Tarifs</a>
-                <a href="testimonials.html">Avis</a>
-                <a href="about.html" aria-current="page">À propos</a>
+                <a href="/services.html">Offres & Tarifs</a>
+                <a href="/testimonials.html">Avis</a>
+                <a href="/about.html" aria-current="page">À propos</a>
                 <a class="btn btn--whatsapp" data-wa-number="+33745301632"
                     data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
             </nav>
@@ -57,9 +57,9 @@
                             et la confiance à l’oral.
                         </p>
                         <ul class="trust-list" style="margin-top: var(--s-5);">
-                            <li><img src="src="assets/img/certs/cambridge-logo.png" alt="Cambridge"
+                            <li><img src="/assets/img/certs/cambridge-logo.png" alt="Cambridge"
                                     class="trust-logo"><span>Formateur affilié Cambridge</span></li>
-                            <li><img src="src="assets/img/certs/upc-logo.png" alt="Université Paris Cité"
+                            <li><img src="/assets/img/certs/upc-logo.png" alt="Université Paris Cité"
                                     class="trust-logo"><span>Master Linguistique — Université Paris Cité (en
                                     cours)</span></li>
                             <li><span class="badge">Enseignant public (2–3 ans)</span></li>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="hero__media">
-                        <img src="src="assets/img/portraits/headshot.jpg" alt="Nima — formateur d’anglais"
+                        <img src="/assets/img/portraits/headshot.jpg" alt="Nima — formateur d’anglais"
                             class="hero__img">
                     </div>
                 </div>
@@ -85,11 +85,11 @@
                         <h3>Documents & certificats</h3>
                         <p>Certificats et lettres disponibles (version filigranée) :</p>
                         <ul style="margin-top: var(--s-3);">
-                            <li><a href="href="assets/img/certs/attestation-cambridge.pdf" target="_blank"
+                            <li><a href="/assets/img/certs/attestation-cambridge.pdf" target="_blank"
                                     rel="noopener">Attestation affiliation Cambridge (PDF)</a></li>
-                            <li><a href="href="assets/img/certs/attestation-enseignant-public.pdf" target="_blank"
+                            <li><a href="/assets/img/certs/attestation-enseignant-public.pdf" target="_blank"
                                     rel="noopener">Attestation expérience enseignant public (PDF)</a></li>
-                            <li><a href="href="assets/img/certs/certificat-universite-paris-cite.pdf" target="_blank"
+                            <li><a href="/assets/img/certs/certificat-universite-paris-cite.pdf" target="_blank"
                                     rel="noopener">Attestation Master — Université Paris Cité (PDF)</a></li>
                         </ul>
                         <p class="disclaimer">Versions complètes disponibles sur demande (parents uniquement).</p>
@@ -127,7 +127,7 @@
         </div>
     </footer>
 
-    <script src="src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
