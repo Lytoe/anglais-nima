@@ -1,62 +1,108 @@
 ﻿<!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Offres & Tarifs — Cours d’anglais à Paris | Nima</title>
-  <meta name="description" content="Formules collégiens & lycéens : séance 75 min (40 €) ou programme 5/7 semaines (250 €). Paris 12/13/20, Nation, Gare de Lyon. À domicile et en ligne.">
-  <link rel="canonical" href="https://lytoe.github.io/anglais-nima/services.html"><!-- swap to final domain later -->
+  <title>Sprints & Tarifs — Cours d’anglais à Paris | Nima</title>
+  <meta name="description"
+    content="Sprints d’anglais orientés résultats (CM1→Terminale). Paris — déplacements tous arrondissements (préférence 12e/13e/20e). 75 min (40 €), 2h (60 €). Sprints 4–6 semaines dès 159 € / 199 € / 239 €.">
+  <link rel="canonical" href="https://anglais.nima.fr/services.html">
   <link rel="icon" href="assets/favicon/favicon.ico">
   <link rel="manifest" href="manifest/site.webmanifest">
 
-  <meta property="og:title" content="Offres & Tarifs — Cours d’anglais à Paris">
-  <meta property="og:description" content="Séance 75 min (40 €) ou pack 5/7 semaines (250 €). Paris 12/13/20, Nation, Gare de Lyon.">
-  <meta property="og:image" content="https://lytoe.github.io/anglais-nima/seo/og-image.jpg">
-  <meta property="og:url" content="https://lytoe.github.io/anglais-nima/services.html">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Sprints & Tarifs — Cours d’anglais à Paris | Nima">
+  <meta property="og:description"
+    content="CM1→Terminale. Paris (tous arrondissements, préférence 12e/13e/20e). Sprints 4–6 semaines, résultats mesurables. Bilan 20 min gratuit.">
+  <meta property="og:image" content="https://anglais.nima.fr/seo/og-image.jpg">
+  <meta property="og:url" content="https://anglais.nima.fr/services.html">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD OfferCatalog -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Cours d’anglais – Collège & Lycée",
-    "areaServed": ["Paris 12e","Paris 13e","Paris 20e","Nation","Gare de Lyon"],
+    "@type": "OfferCatalog",
+    "name": "Sprints et séances d’anglais — Nima",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Sprint CM1–CM2 — Devoirs & bases (6 semaines)",
+        "price": "239",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "6×75 min. Devoirs guidés, lecture à voix haute, vocabulaire de la vie réelle. Objectif 6 semaines : routine stable, erreurs de base corrigées, prise de parole plus naturelle."
+      },
+      {
+        "@type": "Offer",
+        "name": "Sprint 6e–5e — +2 à +3 points (6 semaines)",
+        "price": "239",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "6×75 min. Grammaire claire + mini-tests, méthode 'je lis → je repère → je réponds'. Objectif 4–6 semaines : +2 à +3 points typiques si suivi."
+      },
+      {
+        "@type": "Offer",
+        "name": "Sprint 3e (Brevet) — méthodo & oraux (4 semaines)",
+        "price": "159",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "4×75 min. Fiches 'réponse type', entraînement chronométré, gestion du stress. Mock oral 30 min offert."
+      },
+      {
+        "@type": "Offer",
+        "name": "Sprint Lycée — Grand oral & Parcoursup (5×75 min)",
+        "price": "199",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "5×75 min. Argumentation, synthèse, CV/lettre. Grand oral : plan clair + 10 passages chronométrés."
+      },
+      {
+        "@type": "Offer",
+        "name": "Séance à la carte — 75 min",
+        "price": "40",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Séance individuelle à domicile ou en ligne. Ciblée sur un besoin précis."
+      },
+      {
+        "@type": "Offer",
+        "name": "Séance à la carte — 2h",
+        "price": "60",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Format intensif 2h (remise ~6% vs 64 €)."
+      },
+      {
+        "@type": "Offer",
+        "name": "Pack intensif — 5×2h",
+        "price": "300",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Option intensive. 5 séances de 2h."
+      }
+    ],
     "provider": {
       "@type": "Person",
       "name": "Nima Taherkhani",
       "jobTitle": "Formateur d’anglais",
-      "telephone": "+33745301632",
+      "areaServed": "Paris (tous arrondissements); préférence 12e, 13e, 20e",
       "affiliation": { "@type": "Organization", "name": "Cambridge" }
-    },
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "Séance standard 75 min",
-        "price": "40",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
-      },
-      {
-        "@type": "Offer",
-        "name": "Programme 5/7 semaines",
-        "description": "7 × 1h30 (≈10h30) — ou 5 × 2h (intensif)",
-        "price": "250",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
-      }
-    ],
-    "termsOfService": "Paiement virement ou espèces. Merci d’avertir 48h avant pour annulation (replanification possible). +5 € hors zone."
+    }
   }
   </script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header__inner">
@@ -65,9 +111,9 @@
         <a href="services.html" aria-current="page">Offres & Tarifs</a>
         <a href="testimonials.html">Avis</a>
         <a href="about.html">À propos</a>
-        <a class="btn btn--whatsapp"
-           data-wa-number="+33745301632"
-           data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
+        <a href="contact.html">contact</a>
+        <a class="btn btn--whatsapp" data-wa-number="+33745301632"
+          data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -76,62 +122,142 @@
     <!-- HERO / TITLE -->
     <section class="section">
       <div class="container">
-        <h1>Offres & Tarifs</h1>
+        <h1>Sprints d’anglais — résultats mesurables (CM1→Terminale)</h1>
         <p class="lead">
-          Cours à domicile (Paris 12/13/20, Nation, Gare de Lyon) ou en ligne.
-          Formateur affilié <strong>Cambridge</strong>. Objectif : résultats visibles et confiance à l’oral.
+          À domicile & en ligne — je me déplace partout à Paris (préférence <strong>12e/13e/20e</strong>).<br>
+          Bilan d’entrée <strong>20 min gratuit</strong>, objectifs clairs, progrès suivis.
         </p>
+        <div class="cta-row" style="margin-top: var(--s-4);">
+          <a class="btn btn--primary" href="contact.html#bilan">Réserver un bilan 20 min (gratuit)</a>
+          <a class="btn btn--ghost" data-wa-number="+33745301632"
+            data-wa-text="Bonjour, j’ai une question sur vos offres.">Poser une question</a>
+        </div>
 
-        <!-- PRICING -->
+        <!-- SPRINTS & SESSIONS -->
         <div class="pricing-grid" style="margin-top: var(--s-7);">
           <div class="price-card">
-            <h3>Séance standard</h3>
-            <p class="price"><strong>75 min — 40 €</strong></p>
+            <h3>Sprint CM1–CM2 — Devoirs & bases</h3>
+            <p class="price"><strong>6 semaines — 239 €</strong></p>
             <ul>
-              <li>À domicile ou en ligne</li>
-              <li>Collège & Lycée (Brevet, Bac, Grand oral)</li>
-              <li>Grammaire, compréhension, expression, méthodologie</li>
+              <li>Devoirs guidés + lecture à voix haute 10 min/séance</li>
+              <li>Vocabulaire de la vie réelle (école/maison/loisirs)</li>
+              <li><strong>Objectif 6 semaines :</strong> routine stable, erreurs de base corrigées, prise de parole plus
+                naturelle</li>
             </ul>
-            <a class="btn btn--primary"
-               data-wa-number="+33745301632"
-               data-wa-text="Bonjour, je souhaite réserver une séance de 75 minutes.">Réserver</a>
+            <a class="btn btn--primary" href="contact.html#bilan">Commencer ce sprint</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Sprint 6e–5e — +2 à +3 points</h3>
+            <p class="price"><strong>6 semaines — 239 €</strong></p>
+            <ul>
+              <li>Grammaire claire (présent/passé/futur) + mini-tests hebdo</li>
+              <li>Méthode “je lis → je repère → je réponds” pour réussir les contrôles</li>
+              <li><strong>Objectif 4–6 semaines :</strong> +2 à +3 points typiques si le travail est suivi</li>
+            </ul>
+            <a class="btn btn--primary" href="contact.html#bilan">Commencer ce sprint</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Sprint 3e (Brevet) — méthodo & oraux</h3>
+            <p class="price"><strong>4 semaines — 159 €</strong></p>
+            <ul>
+              <li>Fiches “réponse type”, entraînement chronométré, gestion du stress</li>
+              <li>6 sujets Brevet (compréhension + expression)</li>
+              <li><strong>Bonus :</strong> mock oral 30 min <strong>offert</strong></li>
+            </ul>
+            <a class="btn btn--primary" href="contact.html#bilan">Commencer ce sprint</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Sprint Lycée — Grand oral & Parcoursup</h3>
+            <p class="price"><strong>5 × 75 min — 199 €</strong></p>
+            <ul>
+              <li>Argumentation, synthèse, CV & lettre (concret)</li>
+              <li>Grand oral : plan clair + <strong>10 passages</strong> chronométrés</li>
+              <li><strong>Objectif 5–7 semaines :</strong> notes stabilisées, discours prêts</li>
+            </ul>
+            <a class="btn btn--primary" href="contact.html#bilan">Commencer ce sprint</a>
           </div>
 
           <div class="price-card price-card--highlight">
-            <h3>Programme 5/7 semaines</h3>
-            <p class="price"><strong>250 €</strong></p>
+            <h3>Séances à la carte</h3>
+            <p class="price"><strong>75 min — 40 €</strong> • <strong>2h — 60 €</strong></p>
             <ul>
-              <li><strong>7 × 1h30</strong> (≈ 10h30) — rythme recommandé</li>
-              <li>ou <strong>5 × 2h</strong> — option intensive</li>
-              <li>Suivi WhatsApp + plan personnalisé</li>
+              <li>À domicile (Paris) ou en ligne</li>
+              <li>Besoin précis : contrôle proche, oral, grammaire</li>
+              <li><strong>Option intensif :</strong> 5 × 2h — 300 €</li>
             </ul>
-            <a class="btn btn--primary"
-               data-wa-number="+33745301632"
-               data-wa-text="Bonjour, je souhaite démarrer le programme 5/7 semaines (250 €).">Démarrer</a>
+            <a class="btn btn--primary" data-wa-number="+33745301632"
+              data-wa-text="Bonjour, je souhaite réserver une séance (75 min ou 2h).">Réserver une séance</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- MATERIALS / SUPPORTS -->
-    <section id="supports" class="section section--alt">
+    <!-- INCLUDED IN EVERY SPRINT -->
+    <section class="section section--alt">
       <div class="container">
-        <h2>Ce que votre enfant reçoit</h2>
+        <h2>Inclus dans chaque sprint</h2>
         <div class="cards">
+          <article class="card">
+            <h3>Bilan d’entrée</h3>
+            <p>20 min <strong>gratuit</strong> — 3 priorités + plan 4–6 semaines.</p>
+          </article>
+          <article class="card">
+            <h3>Supports inclus</h3>
+            <p><strong>PDF, fiches, checklists, modèles de réponses</strong> — partagés avec l’élève et les parents.</p>
+          </article>
+          <article class="card">
+            <h3>Suivi & preuves</h3>
+            <p>Mini-tests hebdo, feedback après séance, récap parent.</p>
+          </article>
+          <article class="card">
+            <h3>Format</h3>
+            <p>Présentiel ou en ligne — au choix, sans frais.</p>
+          </article>
+          <article class="card">
+            <h3>Garantie</h3>
+            <p>Pas convaincu après la <strong>1re séance</strong> ? <strong>Remboursement</strong>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIALS / SUPPORTS (renamed) -->
+    <section id="supports" class="section">
+      <div class="container">
+        <h2>Exemples de supports</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Plans de cours personnalisés</h3>
+            <p>Organisation claire des séances, objectifs définis et progression adaptée à chaque élève.</p>
+            <p><a href="assets/docs/lessonPlan.pdf" target="_blank" rel="noopener">Voir un extrait
+                (PDF)</a></p>
+          </article>
           <article class="card">
             <h3>Supports personnalisés</h3>
             <p>Fiches et exercices adaptés au niveau (CM1–Terminale) avec exemples concrets.</p>
-            <p><a href="assets/docs/cm2-lecture-lexique-extrait.pdf" target="_blank" rel="noopener">Voir un extrait (PDF)</a></p>
+            <p><a href="assets/docs/2nde-vocab-progression-tracker.pdf" target="_blank" rel="noopener">Voir un extrait
+                (PDF)</a></p>
           </article>
           <article class="card">
-            <h3>Plan & suivi</h3>
-            <p>Objectifs clairs semaine par semaine, suivi WhatsApp, mini-tests de progression.</p>
-            <p><a href="assets/docs/2nde-vocab-progression-tracker.pdf" target="_blank" rel="noopener">Exemple de suivi (PDF)</a></p>
+            <h3>Grammaire claire</h3>
+            <p>Règles expliquées simplement avec exemples concrets et exercices pratiques.</p>
+            <p><a href="assets/docs/grammar.pdf" target="_blank" rel="noopener">Exemple de suivi
+                (PDF)</a></p>
           </article>
           <article class="card">
             <h3>Préparation d’épreuves</h3>
             <p>Plans de réponses pour Brevet/Bac, entraînement à l’oral, corrections détaillées.</p>
-            <p><a href="assets/docs/3e-brevet-oral-plan-exemple.pdf" target="_blank" rel="noopener">Plan d’oral (PDF)</a></p>
+            <p><a href="assets/docs/brevet.pdf" target="_blank" rel="noopener">Plan d’oral
+                (PDF)</a></p>
+          </article>
+          <article class="card">
+            <h3>Programme structuré</h3>
+            <p>Parcours progressif du CM1 à la Terminale, couvrant grammaire, vocabulaire et compétences orales.</p>
+            <p><a href="assets/docs/lessonPlan.pdf" target="_blank" rel="noopener">Voir un extrait
+                (PDF)</a></p>
           </article>
         </div>
       </div>
@@ -143,11 +269,13 @@
         <div class="cards">
           <article class="card">
             <h3>Zone couverte</h3>
-            <p>Paris 12e, 13e, 20e, Nation, Gare de Lyon. <strong>+5 €</strong> hors zone.</p>
+            <p>Paris (tous arrondissements), préférence <strong>12e/13e/20e</strong>. <strong>+5 €</strong> hors zone
+              initiale.</p>
           </article>
           <article class="card">
             <h3>Organisation</h3>
-            <p>Séances individuelles de <strong>75 min</strong> (idéal). Possibilité d’<strong>intensif 2h</strong> selon objectifs.</p>
+            <p>Séances individuelles de <strong>75 min</strong> (idéal) ou <strong>2h</strong> (intensif) selon
+              objectifs.</p>
           </article>
           <article class="card">
             <h3>Paiement</h3>
@@ -160,9 +288,7 @@
         </div>
 
         <div class="cta-center" style="margin-top: var(--s-8);">
-          <a class="btn btn--ghost"
-             data-wa-number="+33745301632"
-             data-wa-text="Bonjour, j’ai une question sur vos offres.">Poser une question sur WhatsApp</a>
+          <a class="btn btn--ghost" href="testimonials.html">Voir les preuves (avis & certificats)</a>
         </div>
       </div>
     </section>
@@ -173,12 +299,11 @@
     <div class="container footer__grid">
       <div>
         <strong>Nima</strong> — Formateur affilié Cambridge (en ligne & présentiel)<br>
-        Paris 12/13/20, Nation, Gare de Lyon
+        Paris — préférence 12/13/20
       </div>
       <div class="footer__cta">
-        <a class="btn btn--whatsapp"
-           data-wa-number="+33745301632"
-           data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
+        <a class="btn btn--whatsapp" data-wa-number="+33745301632"
+          data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
         <a class="btn btn--ghost" href="mailto:n.taherkhani1378@gmail.com">Email</a>
       </div>
     </div>
@@ -189,4 +314,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

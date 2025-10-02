@@ -1,27 +1,58 @@
 ﻿<!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — Cours d’anglais à Paris | Nima</title>
-  <meta name="description" content="Contact WhatsApp ou email. Zone : Paris 12/13/20, Nation, Gare de Lyon (+5 € hors zone).">
+  <title>Contact & Réservation — Cours d’anglais à Paris | Nima</title>
+  <meta name="description"
+    content="Réservez un bilan 30 min (gratuit) ou une séance via Cal.com. WhatsApp et email disponibles. Paris (tous arrondissements, préférence 12e/13e/20e). Supports PDF inclus.">
   <link rel="canonical" href="https://anglais.nima.fr/contact.html">
-  <link rel="icon" href="href="assets/favicon/favicon.ico">
-  <link rel="manifest" href="href="manifest/site.webmanifest">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="manifest" href="manifest/site.webmanifest">
 
-  <meta property="og:title" content="Contact — Cours d’anglais à Paris">
-  <meta property="og:description" content="Écrivez-moi sur WhatsApp pour réserver une séance ou poser une question.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact & Réservation — Cours d’anglais à Paris">
+  <meta property="og:description"
+    content="Bilan 30 min gratuit. Réservez en ligne (Cal.com) ou écrivez sur WhatsApp. Paris (préférence 12e/13e/20e).">
   <meta property="og:image" content="https://anglais.nima.fr/seo/og-image.jpg">
   <meta property="og:url" content="https://anglais.nima.fr/contact.html">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="href="assets/css/base.css">
-  <link rel="stylesheet" href="href="assets/css/layout.css">
-  <link rel="stylesheet" href="href="assets/css/components.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Cal.com Embed styles -->
+  <link href="https://app.cal.com/embed/embed.css" rel="stylesheet">
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nima — Cours d’anglais",
+    "image": "https://anglais.nima.fr/seo/og-image.jpg",
+    "areaServed": "Paris (tous arrondissements); préférence 12e, 13e, 20e",
+    "url": "https://anglais.nima.fr/contact.html",
+    "telephone": "+33745301632",
+    "priceRange": "€€",
+    "knowsAbout": ["Anglais CM1-CM2", "Anglais collège", "Brevet", "Bac anglais", "Grand oral", "Parcoursup"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+33745301632",
+      "availableLanguage": ["fr-FR","en-GB"]
+    }
+  }
+  </script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header__inner">
@@ -30,40 +61,156 @@
         <a href="services.html">Offres & Tarifs</a>
         <a href="testimonials.html">Avis</a>
         <a href="about.html">À propos</a>
-        <a class="btn btn--whatsapp"
-           data-wa-number="+33745301632"
-           data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn--whatsapp" data-wa-number="+33745301632"
+          data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="section">
       <div class="container">
-        <h1>Contact</h1>
-        <p class="lead">Le plus rapide : <strong>WhatsApp</strong>. Je réponds dès que possible entre 9h et 20h (lun–sam).</p>
+        <h1>Réserver un bilan ou une séance</h1>
+        <p class="lead">
+          <strong>Cal.com (recommandé)</strong> — choisissez un créneau en 10 secondes.<br>
+          Je me déplace partout à Paris (préférence <strong>12e/13e/20e</strong>) — présentiel & en ligne.
+        </p>
+      </div>
+    </section>
 
-        <div class="cards" style="margin-top: var(--s-6);">
+    <!-- CAL.COM BOOKING -->
+    <section id="bilan" class="section">
+      <div class="container">
+        <h2>Bilan <span style="white-space:nowrap;">30 min</span> (gratuit)</h2>
+        <p>Objectif : comprendre le niveau, définir 3 priorités et proposer un plan sur 4–6 semaines.</p>
+
+        <!-- Inline Cal embed -->
+        <div id="cal-bilan" style="width:100%; min-height:700px;"></div>
+        <noscript>
+          <p><a class="btn btn--ghost" href="https://cal.com/nima-taherkhani-z56zun/30min" target="_blank"
+              rel="noopener">Ouvrir le calendrier</a></p>
+        </noscript>
+      </div>
+    </section>
+
+    <section id="seance" class="section section--alt">
+      <div class="container">
+        <h2>Séance 75 min</h2>
+        <p><strong>Temporairement en 2 étapes :</strong> réservez un créneau 30 min ci-dessous et
+          indiquez “<em>Séance 75 min</em>” (ou “<em>2h</em> / “<em>Pack 5×2h</em>”) dans la note — je basculerai
+          l’invitation sur la bonne durée.</p>
+
+        <!-- Reuse the same Cal event for now -->
+        <div id="cal-seance" style="width:100%; min-height:750px;"></div>
+        <noscript>
+          <p><a class="btn btn--ghost" href="https://cal.com/nima-taherkhani-z56zun/30min" target="_blank"
+              rel="noopener">Ouvrir le calendrier</a></p>
+        </noscript>
+
+        <!-- Policy strip -->
+        <p class="note" style="margin-top: var(--s-5);">
+          Présentiel Paris (préférence 12e/13e/20e). <strong>Supports PDF inclus</strong> pour chaque séance.
+          Annulation <strong>48h</strong>. <strong>+5 €</strong> hors zone initiale.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHATSAPP QUICK BRIEF -->
+    <section class="section">
+      <div class="container">
+        <h2>WhatsApp (réponse rapide)</h2>
+        <p>Vous préférez un message ? Copiez le modèle puis envoyez-le :</p>
+        <div class="cards">
           <article class="card">
-            <h3>WhatsApp</h3>
-            <p>Expliquez votre besoin (niveau, classe, objectifs, zone, créneaux).</p>
-            <a class="btn btn--whatsapp"
-               data-wa-number="+33745301632"
-               data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">Écrire sur WhatsApp</a>
+            <h3>Message type</h3>
+            <textarea id="wa-template" rows="6" style="width:100%;"
+              aria-label="Modèle WhatsApp">Bonjour Nima, je souhaite des cours d’anglais pour [classe : CM1/6e/3e/2nde/Terminale], objectif(s) : [ex. +2 points, Grand oral], format : [à domicile / en ligne], localisation : [ex. Paris 12e], disponibilités : [jours/heures]. Merci !</textarea>
+            <div class="cta-row" style="margin-top: var(--s-3);">
+              <button class="btn btn--primary" id="wa-send">Envoyer sur WhatsApp</button>
+              <button class="btn btn--ghost" id="wa-copy">Copier le message</button>
+            </div>
           </article>
 
           <article class="card">
             <h3>Email</h3>
-            <p>Pour les pièces jointes (attestations, bulletins) : </p>
+            <p>Pour les pièces jointes (attestations, bulletins) :</p>
             <p><a class="btn btn--ghost" href="mailto:n.taherkhani1378@gmail.com">n.taherkhani1378@gmail.com</a></p>
           </article>
-
-          <article class="card">
-            <h3>Zone couverte</h3>
-            <p>À domicile : Paris 12e, 13e, 20e, Nation, Gare de Lyon. <strong>+5 €</strong> hors zone.</p>
-            <p>Paiement : <strong>virement</strong> ou <strong>espèces</strong>. Facture possible.</p>
-          </article>
         </div>
+      </div>
+    </section>
+
+    <!-- FALLBACK MINI-FORM -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Formulaire rapide (si besoin)</h2>
+        <form id="fallback-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="parent">Nom du parent</label>
+              <input id="parent" name="parent" type="text" required autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="eleve">Prénom de l’élève</label>
+              <input id="eleve" name="eleve" type="text" required autocomplete="off">
+            </div>
+
+            <div class="field">
+              <label for="classe">Classe</label>
+              <select id="classe" name="classe" required>
+                <option value="">Sélectionner…</option>
+                <option>CM1</option>
+                <option>CM2</option>
+                <option>6e</option>
+                <option>5e</option>
+                <option>4e</option>
+                <option>3e</option>
+                <option>2nde</option>
+                <option>1ère</option>
+                <option>Terminale</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="format">Format</label>
+              <select id="format" name="format" required>
+                <option value="">Sélectionner…</option>
+                <option>À domicile</option>
+                <option>En ligne</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="zone">Arrondissement / zone</label>
+              <input id="zone" name="zone" type="text" placeholder="ex. Paris 12e" required autocomplete="off">
+            </div>
+
+            <div class="field">
+              <label for="creneaux">Disponibilités</label>
+              <input id="creneaux" name="creneaux" type="text" placeholder="ex. mer 17h–19h, sam 10h–12h" required
+                autocomplete="off">
+            </div>
+
+            <div class="field">
+              <label for="email">Email (optionnel)</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="ex. parent@email.com">
+            </div>
+
+            <div class="field">
+              <label for="tel">Téléphone (optionnel)</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="ex. 06 12 34 56 78">
+            </div>
+          </div>
+
+          <div class="cta-row" style="margin-top: var(--s-4);">
+            <button type="submit" class="btn btn--primary">Envoyer sur WhatsApp</button>
+            <button type="button" class="btn btn--ghost" id="fallback-mail">Envoyer par email</button>
+          </div>
+        </form>
+
       </div>
     </section>
   </main>
@@ -72,12 +219,11 @@
     <div class="container footer__grid">
       <div>
         <strong>Nima</strong> — Formateur affilié Cambridge (en ligne & présentiel)<br>
-        Paris 12/13/20, Nation, Gare de Lyon
+        Paris — préférence 12/13/20
       </div>
       <div class="footer__cta">
-        <a class="btn btn--whatsapp"
-           data-wa-number="+33745301632"
-           data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
+        <a class="btn btn--whatsapp" data-wa-number="+33745301632"
+          data-wa-text="Bonjour, je vous contacte afin d'obtenir des informations sur les cours d'anglais que vous proposez...">WhatsApp</a>
         <a class="btn btn--ghost" href="mailto:n.taherkhani1378@gmail.com">Email</a>
       </div>
     </div>
@@ -86,7 +232,114 @@
     </div>
   </footer>
 
-  <script src="src="assets/js/main.js"></script>
-</body>
-</html>
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
 
+  <!-- Cal inline embed (app.cal.com namespace API) -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal; let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {}; cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1]; api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    // Init namespace "main"
+    Cal("init", "main", { origin: "https://app.cal.com" });
+
+    // Inline embed #1: Bilan 30 min
+    Cal.ns.main("inline", {
+      elementOrSelector: "#cal-bilan",
+      calLink: "nima-taherkhani-z56zun/30min",
+      config: { layout: "month_view", theme: "light" }
+    });
+
+    // Inline embed #2: Séance (reuse 30 min for now)
+    Cal.ns.main("inline", {
+      elementOrSelector: "#cal-seance",
+      calLink: "nima-taherkhani-z56zun/30min",
+      config: { layout: "month_view", theme: "light" }
+    });
+
+    // Optional global UI
+    Cal.ns.main("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view" });
+  </script>
+
+  <script>
+    // WhatsApp template actions
+    (function () {
+      const number = '+33745301632';
+      const waSend = document.getElementById('wa-send');
+      const waCopy = document.getElementById('wa-copy');
+      const txt = document.getElementById('wa-template');
+
+      function openWA(message) {
+        const url = 'https://wa.me/' + number.replace(/\D/g, '') + '?text=' + encodeURIComponent(message);
+        window.open(url, '_blank', 'noopener');
+      }
+      if (waSend) { waSend.addEventListener('click', () => openWA(txt.value)); }
+      if (waCopy) {
+        waCopy.addEventListener('click', async () => {
+          try { await navigator.clipboard.writeText(txt.value); waCopy.textContent = 'Copié ✔'; }
+          catch (e) { waCopy.textContent = 'Copie impossible'; }
+          setTimeout(() => waCopy.textContent = 'Copier le message', 1500);
+        });
+      }
+    })();
+
+    // Fallback mini-form -> WhatsApp or email
+    (function () {
+      const f = document.getElementById('fallback-form');
+      const mailBtn = document.getElementById('fallback-mail');
+      const number = '+33745301632';
+
+      function buildMessage(data) {
+        return [
+          'Bonjour Nima,',
+          `Parent: ${data.parent}`,
+          `Élève: ${data.eleve} (${data.classe})`,
+          `Format: ${data.format}`,
+          `Zone: ${data.zone}`,
+          `Disponibilités: ${data.creneaux}`,
+          data.email ? `Email: ${data.email}` : '',
+          data.tel ? `Téléphone: ${data.tel}` : ''
+        ].filter(Boolean).join('\n');
+      }
+
+      f.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = Object.fromEntries(new FormData(f).entries());
+        const msg = buildMessage(data);
+        const url = 'https://wa.me/' + number.replace(/\D/g, '') + '?text=' + encodeURIComponent(msg);
+        window.open(url, '_blank', 'noopener');
+      });
+
+      if (mailBtn) {
+        mailBtn.addEventListener('click', () => {
+          const data = Object.fromEntries(new FormData(f).entries());
+          const msg = encodeURIComponent(buildMessage(data));
+          const to = 'n.taherkhani1378@gmail.com';
+          window.location.href = `mailto:${to}?subject=Demande de cours d’anglais&body=${msg}`;
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
