@@ -184,3 +184,10 @@ h3 {
   font-size: var(--fs-0);
   margin-top: var(--s-3);
 }
+/* Spacing utilities (for removing inline styles in HTML) */
+.mt-6 { margin-top: var(--s-6) !important; }
+.mt-8 { margin-top: var(--s-8) !important; }
+.mt-10 { margin-top: var(--s-10) !important; }
+
+/* Safety: prevent accidental horizontal scroll on mobile (debug if you see clipping) */
+html { overflow-x: hidden; }

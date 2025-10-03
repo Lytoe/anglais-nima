@@ -18,8 +18,38 @@
       a.href = buildWaHref(num, txt);
       a.target = '_blank';
       a.rel = 'noopener';
+
+
     });
   }
+  function initLightbox() {
+    const lb = document.createElement('div');
+    lb.className = 'lightbox';
+    lb.innerHTML = `
+      <button class="lightbox__close" aria-label="Fermer">×</button>
+      <img class="lightbox__img" alt="">
+    `;
+    document.body.appendChild(lb);
+
+    const img = lb.querySelector('.lightbox__img');
+    const close = () => lb.classList.remove('open');
+    lb.addEventListener('click', (e) => {
+      if (e.target === lb || e.target.classList.contains('lightbox__close')) close();
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+    document.querySelectorAll('[data-lightbox="img"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const src = a.getAttribute('data-lb-src');
+        if (!src) { window.open(a.href, '_blank'); return; }
+        img.src = src;
+        lb.classList.add('open');
+      });
+    });
+  }
+
+
 
   function setFooterYear() {
     const y = document.getElementById('y');
@@ -29,5 +59,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     setFooterYear();
     wireWhatsAppButtons();
+    initLightbox();
   });
 })();

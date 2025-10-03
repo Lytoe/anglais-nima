@@ -42,22 +42,20 @@
    HERO (white background)
    ========================= */
 .hero { padding-block: var(--s-10); }
-
-/* Hard reset in case any old CSS tried to put a bg image here */
-.hero.section { background: #fff !important; }
+.hero.section { background: #fff !important; } /* hard reset */
 
 .hero__grid {
   display: grid;
-  grid-template-columns: 1.2fr .8fr;   /* more room for text */
+  grid-template-columns: 1.2fr .8fr;
   gap: var(--s-8);
   align-items: center;
-  min-height: 64vh;                    /* balanced height without huge scroll */
+  min-height: 64vh;
 }
 
-.hero__copy { 
-  display: grid; 
-  gap: var(--s-5); 
-  max-width: 56ch;                     /* readable line-length */
+.hero__copy {
+  display: grid;
+  gap: var(--s-5);
+  max-width: 56ch;
 }
 .cta-row { display: flex; gap: var(--s-3); flex-wrap: wrap; }
 
@@ -71,7 +69,7 @@
   max-height: 72vh;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 50% 30%;            /* pull focus toward eyes; tweak if needed */
+  object-position: 50% 30%;
   border-radius: 24px;
   box-shadow: 0 18px 48px rgba(0,0,0,.28);
   border: 1px solid rgba(15,23,42,.08);
@@ -99,18 +97,34 @@
   background: #fff;
   box-shadow: var(--shadow-sm);
 }
-.price-card--highlight { border-color: rgba(15,98,254,.3); box-shadow: 0 8px 28px rgba(15,98,254,.08); }
+.price-card--highlight {
+  border-color: rgba(15,98,254,.3);
+  box-shadow: 0 8px 28px rgba(15,98,254,.08);
+}
 .price { font-size: var(--fs-3); }
 
-/* Testimonials */
+/* Testimonials (single source of truth) */
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--s-6);
 }
 .testimonial { display: grid; gap: var(--s-3); }
-.testimonial img { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.testimonial img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;       /* avoids CLS for 640x360 assets */
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
 .cta-center { display: grid; place-items: center; margin-top: var(--s-6); }
+.testimonials .testimonial figcaption {
+  color: #334155;
+  font-size: var(--fs-1);
+  line-height: 1.45;
+}
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); background: #fff; }
@@ -123,6 +137,59 @@
 .footer__cta { display: flex; gap: var(--s-4); justify-content: flex-end; align-items: center; }
 .footer__legal { padding-bottom: var(--s-6); color: var(--muted); }
 
+/* Credentials grid */
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-6);
+}
+.cred figure { display: grid; gap: var(--s-3); }
+.cred picture, .cred img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.cred figcaption { color: #334155; font-size: var(--fs-1); }
+
+/* Contact form grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-4);
+}
+.field label { display: block; font-weight: 600; margin-bottom: 6px; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0;
+  background: rgba(10,12,18,.84);
+  display: none; align-items: center; justify-content: center;
+  padding: var(--s-6); z-index: 9999;
+}
+.lightbox.open { display: flex; }
+.lightbox__img {
+  max-width: min(100%, 980px);
+  max-height: 86vh;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  background: #fff;
+}
+.lightbox__close {
+  position: absolute; top: 12px; right: 12px;
+  width: 40px; height: 40px; border-radius: 999px;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,.92); border: 1px solid var(--border);
+  font-size: 22px; line-height: 1;
+}
+
 /* =========================
    Responsive
    ========================= */
@@ -134,19 +201,26 @@
   .testimonials { grid-template-columns: 1fr 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__cta { justify-content: flex-start; }
+  .cred-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
 @media (max-width: 640px) {
+  .container { padding-inline: var(--s-4); }
   .cards { grid-template-columns: 1fr; }
   .testimonials { grid-template-columns: 1fr; }
-  .container { padding-inline: var(--s-4); }
   .hero__img { width: min(320px, 60vw); max-height: none; }
+  .form-grid { grid-template-columns: 1fr; }
+  .cred-grid { grid-template-columns: 1fr; }
+
+  /* prevent header overflow on small phones */
+  .header__inner { height: auto; padding-block: 10px; }
+  .nav { flex-wrap: wrap; gap: var(--s-3); }
+  .nav a { font-size: 14px; }
 }
-.testimonials .testimonial {
-  display: grid;
-  gap: var(--s-3);
-}
-.testimonials .testimonial figcaption {
-  color: #334155;
-  font-size: var(--fs-1);
-  line-height: 1.45;
+
+/* Cal.com iframes – force responsive width */
+#cal-bilan, #cal-seance { overflow: hidden; }
+#cal-bilan iframe, #cal-seance iframe {
+  width: 100% !important;
+  min-width: 0 !important;
 }

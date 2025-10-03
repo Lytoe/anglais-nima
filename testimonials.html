@@ -53,14 +53,19 @@
                 <p class="lead">Captures WhatsApp <strong>floutées</strong> (vie privée respectée) et témoignages
                     résumés — périodes et niveaux indiqués pour transparence.</p>
 
-                <div class="testimonials" style="margin-top: var(--s-6);">
+                <div class="testimonials mt-6">
                     <figure class="testimonial">
-                        <img src="assets/img/testimonials/wa-1-blur.jpg"
-                            alt="Avis WhatsApp flouté — Parent 5e, Paris 13e" loading="lazy" decoding="async"
-                            width="640" height="360">
+                        <a href="assets/img/testimonials/wa-1-blur.jpg" data-lightbox="img"
+                            data-lb-src="assets/img/testimonials/wa-1-blur.jpg" aria-label="Agrandir l’avis WhatsApp">
+                            <img src="assets/img/testimonials/wa-1-blur.jpg"
+                                alt="Avis WhatsApp flouté — Parent 5e, Paris 13e" loading="lazy" decoding="async"
+                                width="640" height="360" sizes="(max-width:640px) 100vw, (max-width:1020px) 50vw, 33vw">
+                        </a>
                         <figcaption>« On est très contents de votre méthode… sûrs qu’ils vont atteindre le niveau
                             souhaité. » — Parent, Paris 12e</figcaption>
                     </figure>
+
+
 
                     <figure class="testimonial">
                         <img src="assets/img/testimonials/wa-2-blur.jpg" alt="Avis WhatsApp flouté — Élève 3e, Nation"
@@ -164,10 +169,7 @@
     </footer>
 
     <script src="assets/js/main.js" defer></script>
-    <script>
-        // year stamp
-        document.getElementById('y').textContent = new Date().getFullYear();
-    </script>
+    
 </body>
 
 </html>
